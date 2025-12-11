@@ -466,43 +466,7 @@ function App() {
           </div>
 
           <div className="lg:col-span-5 bg-white rounded-2xl shadow-2xl p-6 flex flex-col overflow-hidden">
-            <div className="flex-1 flex flex-col overflow-hidden">
-              <div className="flex items-center justify-center gap-20 mb-8 py-6">
-                <CulturalAvatar
-                  culture={yourCulture}
-                  label="You"
-                  emotionalState={yourEmotionalState}
-                  size={200}
-                />
-                <CulturalAvatar
-                  culture={theirCulture}
-                  label="Them"
-                  emotionalState={theirEmotionalState}
-                  size={200}
-                />
-              </div>
-
-              <div className="flex-1 overflow-hidden">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Live Cultural Alerts</h3>
-                <div className="h-full overflow-y-auto pr-2 space-y-3">
-                  {insights.length === 0 ? (
-                    <div className="flex items-center justify-center h-full">
-                      <p className="text-gray-400 text-center text-base">
-                        Cultural alerts will appear here in real-time
-                      </p>
-                    </div>
-                  ) : (
-                    insights.map((insight) => (
-                      <LiveAlertCard key={insight.id} insight={insight} showTranslation={false} />
-                    ))
-                  )}
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-4 pt-4 border-t flex-1 overflow-hidden">
-              <TranscriptDisplay entries={transcript} showSilence={showSilence} />
-            </div>
+            <TranscriptDisplay entries={transcript} showSilence={showSilence} />
           </div>
 
           <div className="lg:col-span-4 bg-white rounded-2xl shadow-2xl p-6 overflow-hidden">
