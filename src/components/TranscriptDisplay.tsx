@@ -42,8 +42,8 @@ export function TranscriptDisplay({ entries, showSilence }: TranscriptDisplayPro
                 key={entry.id}
                 className={`p-4 rounded-lg shadow-sm transition-all animate-slide-in-up ${
                   entry.speaker === 'You'
-                    ? 'bg-white'
-                    : 'bg-gray-50 border-l-4 border-gray-400'
+                    ? 'bg-blue-50'
+                    : 'bg-gray-50'
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
