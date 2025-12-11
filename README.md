@@ -1,10 +1,10 @@
-# Babel Fish - AI-Powered Cultural Intelligence for Global Business
+# Context AI - AI-Powered Cultural Intelligence for Global Business
 
 Real-time cultural guidance that prevents miscommunication in international business conversations.
 
 ## Overview
 
-Babel Fish is an AI assistant that acts as your cultural interpreter during cross-cultural business meetings. It listens to conversations, detects cultural moments (like indirect refusals, silence meaning, and communication styles), and provides instant guidance on how to navigate cultural differences.
+Context AI is an AI assistant that acts as your cultural interpreter during cross-cultural business meetings. It listens to conversations, detects cultural moments (like indirect refusals, silence meaning, and communication styles), and provides instant guidance on how to navigate cultural differences.
 
 ## Key Features
 
@@ -16,7 +16,7 @@ Babel Fish is an AI assistant that acts as your cultural interpreter during cros
 - Cultural dimension analysis based on Erin Meyer's Culture Map
 - Support for major business cultures (US, Japan, Germany, Brazil, India, China, Nordic)
 
-## How Babel Fish Uses AI/LLMs
+## How Context AI Uses AI/LLMs
 
 ### 1. VOICE INPUT (Speech-to-Text)
 **Technology:** ElevenLabs STT API or Web Speech API
@@ -128,17 +128,17 @@ Response:
 ## Use Cases
 
 ### 1. International Sales Negotiations
-A US tech company negotiating with a Japanese manufacturing firm. When the Japanese team says "We'll consider it positively," Babel Fish detects this as a soft refusal and alerts the US team to stop pushing and ask clarifying questions.
+A US tech company negotiating with a Japanese manufacturing firm. When the Japanese team says "We'll consider it positively," Context AI detects this as a soft refusal and alerts the US team to stop pushing and ask clarifying questions.
 
 ### 2. Cross-Cultural Team Meetings
-A German manager leading a team with Brazilian and Indian members. When silence occurs after a direct question, Babel Fish explains that high-context cultures may need more time to process and respond.
+A German manager leading a team with Brazilian and Indian members. When silence occurs after a direct question, Context AI explains that high-context cultures may need more time to process and respond.
 
 ### 3. M&A Due Diligence
-Chinese and Nordic companies in merger talks. Babel Fish helps both sides understand different approaches to trust-building, decision-making, and communication styles.
+Chinese and Nordic companies in merger talks. Context AI helps both sides understand different approaches to trust-building, decision-making, and communication styles.
 
 ## Cultural Dimensions (Erin Meyer's Culture Map)
 
-Babel Fish analyzes conversations across 8 cultural dimensions:
+Context AI analyzes conversations across 8 cultural dimensions:
 
 1. **Communication:** Low-context (explicit) ↔ High-context (implicit)
 2. **Evaluation:** Direct negative feedback ↔ Indirect negative feedback
@@ -162,8 +162,8 @@ Babel Fish analyzes conversations across 8 cultural dimensions:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/babel-fish.git
-cd babel-fish
+git clone https://github.com/yourusername/context-ai.git
+cd context-ai
 
 # 2. Install dependencies
 npm install
@@ -182,7 +182,7 @@ The app will run at `http://localhost:5173` and show which AI services are activ
 
 ### API Keys Setup
 
-Babel Fish works with browser fallbacks, but API keys unlock the full AI translation pipeline:
+Context AI works with browser fallbacks, but API keys unlock the full AI translation pipeline:
 
 #### 1. Anthropic Claude (Recommended)
 **Used for:** AI-powered cultural analysis
@@ -296,7 +296,7 @@ src/
 
 ## Demo Mode
 
-Babel Fish includes a built-in demo showcasing a US-Japan business negotiation with real-time cultural insights. Click "Load Demo Conversation" to see it in action.
+Context AI includes a built-in demo showcasing a US-Japan business negotiation with real-time cultural insights. Click "Load Demo Conversation" to see it in action.
 
 ## Future Enhancements
 
@@ -309,7 +309,7 @@ Babel Fish includes a built-in demo showcasing a US-Japan business negotiation w
 
 ## Research Foundation
 
-Babel Fish is built on research from:
+Context AI is built on research from:
 - **Erin Meyer's "The Culture Map"** - Framework for understanding cultural differences
 - **Edward T. Hall's Context Theory** - High vs. low-context communication
 - **Geert Hofstede's Cultural Dimensions** - Power distance, individualism, uncertainty avoidance
@@ -324,7 +324,7 @@ Contributions welcome! Please read CONTRIBUTING.md for guidelines.
 
 ## Support
 
-For questions or issues, please open a GitHub issue or contact support@babelfish.ai
+For questions or issues, please open a GitHub issue or contact support@contextai.ai
 
 ---
 

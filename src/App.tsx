@@ -357,7 +357,7 @@ function App() {
           <div className="lg:col-span-3 bg-white rounded-2xl shadow-2xl p-6 flex flex-col">
             <div className="mb-6">
               <h1 className="text-3xl font-bold text-[#0E71EB] flex items-center gap-2">
-                <span>🐟</span> Babel Fish
+                <span>🐟</span> Context AI
               </h1>
               <p className="text-sm text-gray-600 mt-1">Cultural Intelligence Assistant</p>
             </div>
