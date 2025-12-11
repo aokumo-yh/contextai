@@ -103,17 +103,11 @@ function App() {
       setYourEmotionalState('neutral');
     }, 5000);
 
-    if (voiceOutputEnabled) {
+    if (voiceOutputEnabled && elevenLabsEnabled) {
       try {
-        if (elevenLabsEnabled) {
-          speakText(insight.text);
-        } else if ('speechSynthesis' in window) {
-          const utterance = new SpeechSynthesisUtterance(insight.text);
-          utterance.lang = yourLanguage;
-          window.speechSynthesis.speak(utterance);
-        }
+        speakText(insight.text);
       } catch (e) {
-        console.error('Speech error:', e);
+        console.error('ElevenLabs speech error:', e);
       }
     }
   };
