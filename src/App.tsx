@@ -123,14 +123,21 @@ function App() {
 
     const languageBase = (lang: string) => lang.split('-')[0].toLowerCase();
     const userLanguageBase = languageBase(yourLanguage);
+    const theirLanguageBase = languageBase(theirLanguage);
     const detectedLanguageBase = languageBase(sourceLanguage);
-    const isUserSpeaking = userLanguageBase === detectedLanguageBase;
 
-    currentSpeakerRef.current = isUserSpeaking ? 'You' : 'Them';
+    const isUserSpeaking = userLanguageBase === detectedLanguageBase;
+    const isThemSpeaking = theirLanguageBase === detectedLanguageBase;
+
+    if (isThemSpeaking) {
+      currentSpeakerRef.current = 'Them';
+    } else if (isUserSpeaking) {
+      currentSpeakerRef.current = 'You';
+    }
 
     let translatedText = transcriptText;
     let originalText = transcriptText;
-    let needsTranslation = sourceLanguage !== yourLanguage && !isUserSpeaking;
+    let needsTranslation = isThemSpeaking && theirLanguage !== yourLanguage;
 
     if (isTranslationConfigured() && needsTranslation) {
       try {
