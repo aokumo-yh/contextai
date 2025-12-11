@@ -42,7 +42,7 @@ export function TranscriptDisplay({ entries, showSilence }: TranscriptDisplayPro
                 key={entry.id}
                 className={`p-4 rounded-lg shadow-sm transition-all animate-slide-in-up ${
                   entry.speaker === 'You'
-                    ? 'bg-white border-l-4 border-gray-600'
+                    ? 'bg-white'
                     : 'bg-gray-50 border-l-4 border-gray-400'
                 }`}
               >
