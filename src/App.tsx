@@ -28,6 +28,7 @@ function App() {
   const [yourEmotionalState, setYourEmotionalState] = useState<EmotionalState>('neutral');
   const [theirEmotionalState, setTheirEmotionalState] = useState<EmotionalState>('neutral');
   const [yourLanguage, setYourLanguage] = useState<Language>('en-US');
+  const [theirLanguage, setTheirLanguage] = useState<Language>('ja-JP');
   const [voiceInputEnabled, setVoiceInputEnabled] = useState(false);
   const [voiceOutputEnabled, setVoiceOutputEnabled] = useState(false);
   const [elevenLabsEnabled, setElevenLabsEnabled] = useState(false);
@@ -415,33 +416,13 @@ function App() {
               </div>
             )}
 
-            <div className="mb-6 p-4 bg-gray-50 rounded-lg">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium text-gray-700">Microphone Status</span>
-                {isListening ? (
-                  <Mic className="text-green-500" size={20} />
-                ) : (
-                  <MicOff className="text-gray-400" size={20} />
-                )}
-              </div>
-              <div className="flex items-center gap-2 mb-2">
-                <div
-                  className={`w-3 h-3 rounded-full ${
-                    isListening ? 'bg-green-500 animate-pulse' : 'bg-gray-300'
-                  }`}
-                />
-                <span className="text-sm text-gray-600">
-                  {isListening ? 'Listening...' : 'Idle'}
-                </span>
-              </div>
-              {isListening && <AudioVisualization isActive={isListening} />}
-            </div>
-
             <LanguageVoiceSettings
               yourLanguage={yourLanguage}
+              theirLanguage={theirLanguage}
               voiceInputEnabled={voiceInputEnabled}
               voiceOutputEnabled={voiceOutputEnabled}
               onYourLanguageChange={setYourLanguage}
+              onTheirLanguageChange={setTheirLanguage}
               onVoiceInputToggle={setVoiceInputEnabled}
               onVoiceOutputToggle={setVoiceOutputEnabled}
               isListening={isListening && voiceInputEnabled}

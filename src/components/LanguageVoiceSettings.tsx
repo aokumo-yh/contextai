@@ -4,9 +4,11 @@ import { LanguageSelector } from './LanguageSelector';
 
 interface LanguageVoiceSettingsProps {
   yourLanguage: Language;
+  theirLanguage: Language;
   voiceInputEnabled: boolean;
   voiceOutputEnabled: boolean;
   onYourLanguageChange: (lang: Language) => void;
+  onTheirLanguageChange: (lang: Language) => void;
   onVoiceInputToggle: (enabled: boolean) => void;
   onVoiceOutputToggle: (enabled: boolean) => void;
   isListening?: boolean;
@@ -14,9 +16,11 @@ interface LanguageVoiceSettingsProps {
 
 export function LanguageVoiceSettings({
   yourLanguage,
+  theirLanguage,
   voiceInputEnabled,
   voiceOutputEnabled,
   onYourLanguageChange,
+  onTheirLanguageChange,
   onVoiceInputToggle,
   onVoiceOutputToggle,
   isListening = false,
@@ -33,6 +37,12 @@ export function LanguageVoiceSettings({
           value={yourLanguage}
           onChange={onYourLanguageChange}
           label="Your Language"
+        />
+
+        <LanguageSelector
+          value={theirLanguage}
+          onChange={onTheirLanguageChange}
+          label="Their Language"
         />
 
         <div className="space-y-1">
